@@ -1,4 +1,4 @@
-describe('First Test...', () => {
+describe('Playing with multiple elements.', () => {
     beforeEach(function ()
     {
         browser.waitForAngularEnabled(false)

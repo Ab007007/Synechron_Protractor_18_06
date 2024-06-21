@@ -1,4 +1,12 @@
+var Object = require("./data/Object.json")
+var using = require('jasmine-data-provider');
+
+
 describe('First Test...', () => {
+
+    function testData() {
+        return [{a: 5, b: 10},{a: 15, b: 10},{a: 25, b: 10},{a: 35, b: 10},{a: 45, b: 10},{a: 55, b: 10}];
+    }
     beforeEach(function ()
     {
         browser.waitForAngularEnabled(false)
@@ -6,23 +14,23 @@ describe('First Test...', () => {
         browser.get('https://juliemr.github.io/protractor-demo/');
           
     })
+    using(testData,function(data){
+
+                it('Handle Alerts', () => {                 
+                    element(by.model(Object.locators.homepage.modleFN)).sendKeys(data.a);
+                    element(by.model(Object.locators.homepage.modleSN)).sendKeys(data.b);
+                    element(by.id(Object.locators.homepage.idButton)).click().then(function(){
+                        browser.sleep(2000).then(function () {
+                            console.log("Test Ended ");
+                        });
+                    });
+                    
+                });
+
+
+    })
   
 
-    it('Test Case - 1', () => {
-        element(by.model('first')).sendKeys(123);
-        element(by.model('second')).sendKeys(123);
-        element(by.id('gobutton')).click().then(function(){
-            browser.sleep(5000).then(function () {
-                console.log("***************");
-                element(by.binding('latest')).getText().
-                then(function(text){
-                    console.log(`sum of two numbers is ${text}`);
-                    expect(parseInt(text)).toBe(246);
-                })
-                console.log("Test Ended ");
-                });
-         
-            });
-    });
+
         
 });

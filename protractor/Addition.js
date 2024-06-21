@@ -1,4 +1,4 @@
-describe('First Test...', () => {
+describe('Addition feature', () => {
     
     it('Test Case - 1', () => {
         browser.waitForAngularEnabled(false)

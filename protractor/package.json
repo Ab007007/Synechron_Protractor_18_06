@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "allure-commandline": "^2.29.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.1"
+  }
+}

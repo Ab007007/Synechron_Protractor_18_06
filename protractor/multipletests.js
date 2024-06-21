@@ -1,4 +1,4 @@
-describe('First Test...', () => {
+describe('Muany tests in One Demo.', () => {
     
     it('Test Case - 1', () => {
         browser.waitForAngularEnabled(false)

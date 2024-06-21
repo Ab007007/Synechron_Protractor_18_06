@@ -1,0 +1,13 @@
+{
+    "angular-url" : "https://juliemr.github.io/protractor-demo/",
+
+    "locators" : {
+        "homepage" : {
+            "modleFN" : "first",
+            "modleSN" : "second",
+            "idButton" : "gobutton"
+        }
+    }
+
+
+}

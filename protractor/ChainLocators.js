@@ -1,4 +1,4 @@
-describe('First Test...', () => {
+describe('Chain Locators Demo', () => {
     beforeEach(function ()
     {
         browser.waitForAngularEnabled(false)

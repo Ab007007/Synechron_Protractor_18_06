@@ -1,4 +1,4 @@
-describe('First Test...', () => {
+describe('Get Text Demo', () => {
     beforeEach(function ()
     {
         browser.waitForAngularEnabled(false)
